@@ -48,8 +48,8 @@ object pepon{
     method volar(distancia){
         energia = energia - gastoAlVolar - (distancia * 2)
     }
-    method comer(alimento){
-        energia = energia + (alimento.energiaQueAporta()/2)
+    method comer(comida){
+        energia = energia + (comida.energiaQueAporta()/2)
     }
     method energia(){
         return energia
@@ -63,8 +63,8 @@ object roque{
     method cenas(){
         return cantidadDeCenas
     }
-    method alimentar(alimento){
-        aveActual.comer(alimento)
+    method alimentar(comida){
+        aveActual.comer(comida)
         cantidadDeCenas = cantidadDeCenas +1
     }
     method entrenarA(ave){
